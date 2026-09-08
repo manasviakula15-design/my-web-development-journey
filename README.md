@@ -1,6 +1,6 @@
 A web-based **Bank Account Management System** developed using **Python, Flask, HTML, CSS, and SQLite**. The application provides a simple and user-friendly interface for managing bank account operations and maintaining account-related data.
 
-## 📌 Project Overview
+# 📌 Project Overview
 
 The Bank Account Management System is designed to computerize basic banking operations. It allows users to interact with their bank account through a web interface instead of performing operations manually.
 
