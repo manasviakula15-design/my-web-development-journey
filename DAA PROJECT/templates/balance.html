@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Balance</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Bank Account Details</h1>
+
+            <div class="account-details">
+
+                <p>
+                    <strong>Account Number:</strong>
+                    {{ account["account_number"] }}
+                </p>
+
+                <p>
+                    <strong>Account Holder:</strong>
+                    {{ account["account_holder"] }}
+                </p>
+
+                <p>
+                    <strong>Account Type:</strong>
+                    {{ account["account_type"] }}
+                </p>
+
+                <p>
+                    <strong>Available Balance:</strong>
+                    ₹{{ "%.2f"|format(account["balance"]) }}
+                </p>
+
+            </div>
+
+            <br>
+
+            <a href="/">
+                <button type="button">
+                    Back to Home
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

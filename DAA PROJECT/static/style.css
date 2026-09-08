@@ -1,0 +1,345 @@
+/*
+   BANK ACCOUNT MANAGEMENT SYSTEM
+   COMPLETE STYLE SHEET
+   GENERAL RESET
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+    width: 92%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+/* =========================================
+   MAIN HEADING
+============================================//*
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #12355b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+
+/* =======================================
+   CARDS
+   ========================================= */
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #12355b;
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+
+
+/* =========================================
+   FORM LABELS
+   ========================================= */
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+input,
+select {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 18px;
+
+    border: 1px solid #ccd3dc;
+    border-radius: 7px;
+
+    font-size: 16px;
+    background: #fff;
+
+    outline: none;
+}
+
+
+/* INPUT FOCUS */
+
+input:focus,
+select:focus {
+    border-color: #1769aa;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 105, 170, 0.12);
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button {
+    border: none;
+    border-radius: 7px;
+
+    padding: 13px 24px;
+
+    background: #1769aa;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* BUTTON HOVER */
+
+button:hover {
+    background: #0d568e;
+    transform: translateY(-1px);
+}
+
+
+/* BUTTON CLICK */
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   EXIT BUTTON
+   ========================================= */
+
+.exit-section {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.exit-button {
+    background: black;
+}
+
+.exit-button:hover {
+    background: white;
+}
+
+
+/* =========================================
+   ACCOUNT SEARCH RESULT
+   ========================================= */
+
+.account-result {
+    margin-top: 15px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background: #f0f8f1;
+    border: 1px solid #b8d8bd;
+}
+
+.account-result h3 {
+    margin-bottom: 15px;
+    color: #236b2c;
+}
+
+.account-result p {
+    margin-bottom: 9px;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   BALANCE PAGE
+   ========================================= */
+
+.balance-card {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.balance-card h1 {
+    margin-bottom: 25px;
+}
+
+.account-details {
+    text-align: left;
+    background: #f7f9fc;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e0e5eb;
+}
+
+.account-details p {
+    font-size: 17px;
+    padding: 12px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.account-details p:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   BALANCE AMOUNT
+   ========================================= */
+
+.balance-card h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #1769aa;
+}
+
+
+/* =========================================
+   EXIT PAGE
+   ========================================= */
+
+.exit-card {
+    text-align: center;
+    max-width: 650px;
+    margin: 80px auto;
+}
+
+.exit-card h1 {
+    margin-bottom: 25px;
+}
+
+.exit-card h2 {
+    margin-bottom: 18px;
+    color: #d62828;
+}
+
+.exit-card p {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   MESSAGE PAGE
+   ========================================= */
+
+.message-card {
+    text-align: center;
+    max-width: 600px;
+    margin: 80px auto;
+}
+
+.message-card h1 {
+    margin-bottom: 20px;
+}
+
+.message-card p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+        margin-bottom: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    input,
+    select {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .account-details p {
+        font-size: 15px;
+    }
+
+    .balance-card h2 {
+        font-size: 24px;
+    }
+}

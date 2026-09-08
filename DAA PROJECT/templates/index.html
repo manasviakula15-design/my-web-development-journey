@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Account Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Bank Account Management System</h1>
+
+    <!-- CREATE ACCOUNT -->
+    <div class="card">
+
+        <h2>Create New Account</h2>
+
+        <form action="/create-account" method="POST">
+
+            <label>Account Number</label>
+            <input
+                type="number"
+                name="account_number"
+                placeholder="Enter account number"
+                required
+            >
+
+            <label>Account Holder</label>
+            <input
+                type="text"
+                name="account_holder"
+                placeholder="Enter account holder name"
+                required
+            >
+
+            <label>Account Type</label>
+            <select name="account_type" required>
+                <option value="">Select account type</option>
+                <option value="Savings">Savings</option>
+                <option value="Current">Current</option>
+            </select>
+
+            <label>Initial Balance</label>
+            <input
+                type="number"
+                name="balance"
+                step="0.01"
+                min="0"
+                placeholder="Enter initial balance"
+                required
+            >
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- CHECK BALANCE -->
+    <div class="card">
+
+        <h2>Check Bank Balance</h2>
+
+        <form action="/balance" method="POST">
+
+            <label>Account Number</label>
+
+            <input
+                type="number"
+                name="account_number"
+                placeholder="Enter account number"
+                required
+            >
+
+            <button type="submit">Check Balance</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- DEPOSIT -->
+    <div class="card">
+
+        <h2>Deposit Money</h2>
+
+        <form action="/deposit" method="POST">
+
+            <label>Account Number</label>
+
+            <input
+                type="number"
+                name="account_number"
+                placeholder="Enter account number"
+                required
+            >
+
+            <label>Deposit Amount</label>
+
+            <input
+                type="number"
+                name="amount"
+                step="0.01"
+                min="0.01"
+                placeholder="Enter amount"
+                required
+            >
+
+            <button type="submit">Deposit</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- WITHDRAW -->
+    <div class="card">
+
+        <h2>Withdraw Money</h2>
+
+        <form action="/withdraw" method="POST">
+
+            <label>Account Number</label>
+
+            <input
+                type="number"
+                name="account_number"
+                placeholder="Enter account number"
+                required
+            >
+
+            <label>Withdrawal Amount</label>
+
+            <input
+                type="number"
+                name="amount"
+                step="0.01"
+                min="0.01"
+                placeholder="Enter amount"
+                required
+            >
+
+            <button type="submit">Withdraw</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- EXIT -->
+    <div class="exit-section">
+
+        <a href="/exit" class="exit-button">
+            Exit System
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
